@@ -2,10 +2,10 @@ package Lesson1.B;
 
 import java.util.Scanner;
 
-public class Input {
-    Scanner scanner = new Scanner(System.in);
+class Input {
+    private Scanner scanner = new Scanner(System.in);
 
-    int n = scanner.nextInt();
+    private int n = scanner.nextInt();
     int[] x = new int[n];
 
     void input() {
