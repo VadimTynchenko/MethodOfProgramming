@@ -3,14 +3,19 @@ package Lesson1.B;
 import java.util.Scanner;
 
 class Input {
-    private Scanner scanner = new Scanner(System.in);
 
-    private int n = scanner.nextInt();
-    int[] x = new int[n];
-
-    void input() {
-        for (int i = 0; i < x.length; i++) {
-            x[i] = scanner.nextInt();
+    Input() {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        nums = new int[n];
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] = scanner.nextInt();
         }
     }
+
+    public int[] getNums() {
+        return nums;
+    }
+
+    private int[] nums;
 }
