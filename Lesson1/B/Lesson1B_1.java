@@ -1,26 +1,17 @@
 package Lesson1.B;
 
-import java.util.Scanner;
-
 public class Lesson1B_1 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int[] x = new int[n];
-
-        for (int i = 0; i < x.length; i++) {
-            x[i] = sc.nextInt();
-        }
+        Input input = new Input();
+        input.input();
 
         System.out.print("Четные: ");
-        for (int value : x) {
-            even(value);
-        }
+        for (int value : input.x) even(value);
 
         System.out.println();
 
         System.out.print("Не четные: ");
-        for (int value : x) {
+        for (int value : input.x) {
             odd(value);
         }
     }
