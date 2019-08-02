@@ -4,6 +4,12 @@ import java.util.Scanner;
 
 class Input {
 
+    private int[] nums;
+
+    int[] getNums() {
+        return nums;
+    }
+
     Input() {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
@@ -12,10 +18,4 @@ class Input {
             nums[i] = scanner.nextInt();
         }
     }
-
-    public int[] getNums() {
-        return nums;
-    }
-
-    private int[] nums;
 }
