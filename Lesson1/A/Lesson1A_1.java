@@ -4,9 +4,7 @@ import java.util.Scanner;
 
 public class Lesson1A_1 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        String name = sc.nextLine();
+        String name = args[0];
 
         System.out.println("Hello, " + name);
     }
